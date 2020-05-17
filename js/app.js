@@ -1,4 +1,4 @@
-document.querySelectorAll('.navbar .nav-link').forEach(enlace => {
+/* document.querySelectorAll('.navbar .nav-link').forEach(enlace => {
     enlace.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -24,3 +24,10 @@ window.onscroll = function (e) {
 $('#fecha').countdown('2018/08/23', function(event) {
     $(this).html(event.strftime('<p><span> %D </span> dias <span> %H </span> horas <span> %M </span> minutos  <span> %S </span> Segundos </p>'));
   });
+*/
+
+$(document).ready(function() {
+   $('#fecha').countdown('2020/06/18', function(evento) {
+      $(this).html(evento.strftime('<span> %D </span> Dias <span> %H </span> Horas <span> %M </span> Minutos <span> %S </span> Segundos')); 
+   });
+});
